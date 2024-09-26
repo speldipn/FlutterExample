@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/screen/home_screen.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 void main() {
-  runApp(WebViewExample());
+  WidgetsFlutterBinding.ensureInitialized(); // check app launched!
+
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
+    ),
+  );
 }
 
 // class SplashScreen extends StatelessWidget {
