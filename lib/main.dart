@@ -16,10 +16,18 @@ class SplashScreen extends StatelessWidget {
           children: [
             Container(color: const Color(0xFFF99231)),
             Expanded(
-              child: SizedBox(
-                width: 150.0,
-                height: 150.0,
-                child: Image.asset("assets/logo.png"),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: 150.0,
+                    height: 150.0,
+                    child: Image.asset("assets/logo.png"),
+                  ),
+                  const CircularProgressIndicator(
+                    valueColor: AlwaysStoppedAnimation(Colors.white),
+                  ),
+                ],
               ),
             )
           ],
@@ -61,73 +69,73 @@ class SplashScreen extends StatelessWidget {
 //     ));
 //   }
 // }
-
-class StackWidgetExample extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return (MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: SizedBox(
-          child: Stack(
-            children: [
-              Container(width: 300.0, height: 300.0, color: Colors.red),
-              Container(width: 250.0, height: 250.0, color: Colors.green),
-              Container(width: 200.0, height: 200.0, color: Colors.blue),
-            ],
-          ),
-        ),
-      ),
-    ));
-  }
-}
-
-class ColumnWidgetExample extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return (MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: SizedBox(
-          width: double.infinity,
-          child: Column(
-            children: [
-              Expanded(
-                child: Container(color: Colors.red),
-              ),
-              Flexible(
-                child: Container(color: Colors.blue),
-              ),
-            ],
-          ),
-        ),
-      ),
-    ));
-  }
-}
-
-class RowWidgetExample extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return (MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: SizedBox(
-          height: double.infinity,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Container(width: 50.0, height: 50.0, color: Colors.red),
-              Container(width: 50.0, height: 50.0, color: Colors.green),
-              Container(width: 50.0, height: 50.0, color: Colors.blue),
-            ],
-          ),
-        ),
-      ),
-    ));
-  }
-}
+//
+// class StackWidgetExample extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return (MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Scaffold(
+//         body: SizedBox(
+//           child: Stack(
+//             children: [
+//               Container(width: 300.0, height: 300.0, color: Colors.red),
+//               Container(width: 250.0, height: 250.0, color: Colors.green),
+//               Container(width: 200.0, height: 200.0, color: Colors.blue),
+//             ],
+//           ),
+//         ),
+//       ),
+//     ));
+//   }
+// }
+//
+// class ColumnWidgetExample extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return (MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Scaffold(
+//         body: SizedBox(
+//           width: double.infinity,
+//           child: Column(
+//             children: [
+//               Expanded(
+//                 child: Container(color: Colors.red),
+//               ),
+//               Flexible(
+//                 child: Container(color: Colors.blue),
+//               ),
+//             ],
+//           ),
+//         ),
+//       ),
+//     ));
+//   }
+// }
+//
+// class RowWidgetExample extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return (MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Scaffold(
+//         body: SizedBox(
+//           height: double.infinity,
+//           child: Row(
+//             mainAxisAlignment: MainAxisAlignment.center,
+//             crossAxisAlignment: CrossAxisAlignment.stretch,
+//             children: [
+//               Container(width: 50.0, height: 50.0, color: Colors.red),
+//               Container(width: 50.0, height: 50.0, color: Colors.green),
+//               Container(width: 50.0, height: 50.0, color: Colors.blue),
+//             ],
+//           ),
+//         ),
+//       ),
+//     ));
+//   }
+// }
 
 // class FloatingActionButtonExample extends StatelessWidget {
 //   @override
