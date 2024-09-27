@@ -42,8 +42,6 @@ Builds from a dirty state and then changes to a clean state
 - build()
 - clean state
 
-
-
 ### Gesture
 
 - TextButton

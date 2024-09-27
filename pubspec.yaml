@@ -54,9 +54,20 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
   assets:
-    - assets/logo.png
+    - asset/img/
+    - asset/u_and_i/
 
-  # The following line ensures that the Material Icons font is
+  fonts:
+    - family: Parisienne
+      fonts:
+        - asset: asset/fonts/Parisienne-Regular.ttf
+
+    - family: Sunflower
+      fonts:
+        - asset: asset/fonts/Sunflower-Bold.ttf
+        - asset: asset/fonts/Sunflower-Light.ttf
+        - asset: asset/fonts/Sunflower-Medium.ttf
+
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true

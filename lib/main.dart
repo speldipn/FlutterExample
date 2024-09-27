@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/screen/carousel_screen.dart';
+import 'package:flutter_practice/screen/uandi_screen.dart';
 
 void main() {
   // check app launched!
-  // WidgetsFlutterBinding.ensureInitialized(); 
+  // WidgetsFlutterBinding.ensureInitialized();
 
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CarouselScreen(),
+      home: UAndIScreen(),
     ),
   );
 }
