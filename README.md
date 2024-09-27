@@ -16,7 +16,33 @@
 
 ## Dart, OOP, Asynchrous Progarmming
 
-## Basic Widget
+## Widget
+
+### StatelessWidget Vs StatefulWidget
+
+- Immutable class
+- Call once 'build' function 
+
+## Lifecycle
+
+### Statefull
+
+- constructor()
+- createState()
+  - initState() : Call once
+- deactivate(): Temporary or permanent deletion
+- dispose(): permanent deletion
+
+Builds from a dirty state and then changes to a clean state
+
+### Update state(stateful)
+
+- setState()
+- dirty state
+- build()
+- clean state
+
+
 
 ### Gesture
 

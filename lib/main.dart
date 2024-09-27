@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/screen/home_screen.dart';
+import 'package:flutter_practice/screen/carousel_screen.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized(); // check app launched!
+  // check app launched!
+  // WidgetsFlutterBinding.ensureInitialized(); 
 
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: CarouselScreen(),
     ),
   );
 }
