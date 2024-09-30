@@ -119,7 +119,6 @@ class SettingWidget extends StatelessWidget {
                   divisions: 100,
                   label: "${sensitiveValue.toInt()}",
                   onChanged: (value) {
-                    print(value);
                     setSensitiveValue(value);
                   },
                 ),
