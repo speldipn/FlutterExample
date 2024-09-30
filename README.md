@@ -1,12 +1,13 @@
 # Flutter Examples
 
 # Dart
+
 - User interface optimized
 - Event driven
 - Null safety
 - Spread operator
 - Collection if
-- Hot relaod development environment
+- Hot reload development environment
 
 ## Architecture([Ref](https://mobappdaily.medium.com/everything-you-need-to-know-about-flutter-app-development-aa372ea3e581))
 
@@ -21,15 +22,15 @@
 ### StatelessWidget Vs StatefulWidget
 
 - Immutable class
-- Call once 'build' function 
+- Call once 'build' function
 
 ## Lifecycle
 
-### Statefull
+### Stateful
 
 - constructor()
 - createState()
-  - initState() : Call once
+    - initState() : Call once
 - deactivate(): Temporary or permanent deletion
 - dispose(): permanent deletion
 

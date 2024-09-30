@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/screen/uandi_screen.dart';
+import 'package:flutter_practice/screen/dice_screen.dart';
 
 void main() {
   // check app launched!
@@ -8,7 +8,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: UAndIScreen(),
+      home: DiceScreen(),
     ),
   );
 }
