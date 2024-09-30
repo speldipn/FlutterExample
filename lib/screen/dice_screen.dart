@@ -8,11 +8,11 @@ class DiceScreen extends StatefulWidget {
 }
 
 class _DiceScreen extends State<DiceScreen> {
-  int number = 1;
+  int number = 0;
 
   runGame() {
     setState(() {
-      number = Random().nextInt(6) + 1;
+      number = Random().nextInt(6);
     });
   }
 
@@ -36,7 +36,6 @@ class _DiceScreen extends State<DiceScreen> {
 class DiceWidget extends StatelessWidget {
 
   final assets = [
-    Image.asset("asset/dice/1.png"),
     Image.asset("asset/dice/1.png"),
     Image.asset("asset/dice/2.png"),
     Image.asset("asset/dice/3.png"),
@@ -70,7 +69,7 @@ class DiceWidget extends StatelessWidget {
               ),
             ),
             Text(
-              "$number",
+              "${number + 1}",
               style: const TextStyle(color: Colors.white, fontSize: 20.0),
             )
           ],
@@ -81,6 +80,7 @@ class DiceWidget extends StatelessWidget {
 }
 
 class Buttons extends StatelessWidget {
+
   var runGame;
 
   Buttons(this.runGame);
